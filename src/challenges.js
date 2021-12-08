@@ -15,10 +15,8 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(string) {
   return string.split(' ');
-  let nome = "Go Trybe";
-  console.log(splitSentence(nome))
 }
-
+/* Para resolver este desafio foi usado a função encontrada em:(https://blog.betrybe.com/javascript/javascript-split/) */
 
 // Desafio 4
 function concatName(array) {
@@ -29,8 +27,8 @@ function concatName(array) {
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  return (wins * 3) + ties;
 }
 
 // Desafio 6
