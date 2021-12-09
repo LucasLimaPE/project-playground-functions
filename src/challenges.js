@@ -62,26 +62,26 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 /* A função usada para resolver este desafio foi sugerida por um colega e encontrada em: (https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs) */
 
-  // Desafio 8
-    function fizzBuzz(matrizNumbers) {
-      let numbersMatriz = [];
-        for (i = 0; i <= matrizNumbers.length - 1; i += 1) {
-          if (matrizNumbers[i] % 3 === 0 && matrizNumbers[i] % 5 === 0) {
-            matrizNumbers[1] = "fizzbuzz"
-            numbersMatriz.push(matrizNumbers[i]);
-          } else if (matrizNumbers[1] % 3 === 0) {
-            matrizNumbers[i] = "fizz"
-            numbersMatriz.push(matrizNumbers[i]);
-          } else if (matrizNumbers[1] % 5 === 0) {
-            matrizNumbers[i] = "buzz"
-            numbersMatriz.push(matrizNumbers[i]);
-        }  else if (matrizNumbers[1] % 3 !== 0 &&  matrizNumbers[1] % 5 !== 0) {
-            matrizNumbers[i] = "bug"
-            numbersMatriz.push(matrizNumbers[i]);
-      }
+// Desafio 8
+function fizzBuzz(matrizNumbers) {
+  let numbersMatriz = [];
+
+  for (i = 0; i <= matrizNumbers.length - 1; i += 1) {
+    if (matrizNumbers[i] % 3 === 0 && matrizNumbers[i] % 5 === 0) {
+      numbersMatriz.push('fizzBuzz');
+    } else if (matrizNumbers[i] % 3 !== 0 && matrizNumbers[1] % 5 !== 0) {
+      numbersMatriz.push('bug!');
+    } else if (matrizNumbers[i] % 3 === 0) {
+      numbersMatriz.push('fizz');
+    } else if (matrizNumbers[i] % 5 === 0) {
+      numbersMatriz.push('buzz');
     }
-    return numbersMatriz;
   }
+  return numbersMatriz;
+}
+console.log(fizzBuzz([9, 25]));
+  
+
 
 // Desafio 9
 function encode() {
