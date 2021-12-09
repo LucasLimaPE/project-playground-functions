@@ -79,14 +79,44 @@ function fizzBuzz(matrizNumbers) {
   }
   return numbersMatriz;
 }
-console.log(fizzBuzz([9, 7, 99, 25, 297]))
   
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  let exchangedLetters = '';
+  for (let i = 0; i <= string.length - 1; i += 1) {
+    if (string[i] === 'a') {
+      exchangedLetters = 1;
+    } else if (string[i] === 'e') {
+      exchangedLetters = 2;
+    } else if (string[i] === 'i') {
+      exchangedLetters = 3;
+    } else if (string[i] === 'o') {
+      exchangedLetters = 4;
+    } else if (string[i] === 'u') {
+      exchangedLetters = 5;
+    }else {
+      exchangedLetters = string[i];
+    }
+  }
+  return exchangedLetters;
 }
-function decode() {
-  // seu código aqui
+
+function decode(string) {
+  let exchangedNumbers = '';
+  for (let i = 0; i <= string.length - 1; i += 1) {
+    if (string[i] === 'a') {
+      exchangedNumbers += 1;
+    } else if (string[i] === 'e') {
+      exchangedNumbers += 2;
+    } else if (string[i] === 'i') {
+      exchangedNumbers += 3;
+    } else if (string[i] === 'o') {
+      exchangedNumbers += 4;
+    } else if (string[i] === 'u') {
+      exchangedNumbers += 5;
+    }
+  }
+  return exchangedNumbers;
 }
 
 module.exports = {
