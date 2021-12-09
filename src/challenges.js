@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue(valor1, valor2) {
-  if (valor1 === true && valor2 === ture) {
+  if (valor1 === true && valor2 === true) {
     return true;
   } else {
     return false;
@@ -69,7 +69,7 @@ function fizzBuzz(matrizNumbers) {
   for (i = 0; i <= matrizNumbers.length - 1; i += 1) {
     if (matrizNumbers[i] % 3 === 0 && matrizNumbers[i] % 5 === 0) {
       numbersMatriz.push('fizzBuzz');
-    } else if (matrizNumbers[i] % 3 !== 0 && matrizNumbers[1] % 5 !== 0) {
+    } else if (matrizNumbers[i] % 3 !== 0 && matrizNumbers[i] % 5 !== 0) {
       numbersMatriz.push('bug!');
     } else if (matrizNumbers[i] % 3 === 0) {
       numbersMatriz.push('fizz');
@@ -79,10 +79,8 @@ function fizzBuzz(matrizNumbers) {
   }
   return numbersMatriz;
 }
-console.log(fizzBuzz([9, 25]));
+console.log(fizzBuzz([9, 7, 99, 25, 297]))
   
-
-
 // Desafio 9
 function encode() {
   // seu código aqui
