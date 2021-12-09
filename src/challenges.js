@@ -48,9 +48,19 @@ function highestCount(matriz) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let distanceFromCat1 = cat1 - mouse;
+  let distanceFromCat2 = cat2 - mouse;
+  
+  if (Math.abs(distanceFromCat1) > Math.abs(distanceFromCat2)) {
+    return "cat2";
+  } else if (Math.abs(distanceFromCat2) > Math.abs(distanceFromCat1)) {
+    return "cat1";
+  } else if (Math.abs(distanceFromCat1) === Math.abs(distanceFromCat2)) {
+    return "os gatos trombam e o rato foge";
+  }
 }
+/* A função usada para resolver este desafio foi sugerida por um colega e encontrada em: (https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs) */
 
 // Desafio 8
 function fizzBuzz() {
