@@ -1,11 +1,19 @@
 // Desafio 1
+// Algoritmo:
+// 1 - Declara a função (compareTre) e abre-se o primeiro bloco de código;
+// 2 - Declara-se uma condicional que irá comparar se o (valor1) e o (valor2) tem seus respectivos valores como true, se sim, o retorno da função sera true, se não, o retorno da função será false.
+
 function compareTrue(valor1, valor2) {
   if (valor1 === true && valor2 === true) {
     return true;
-  } else {
-    return false;
   }
+  return false;
 }
+
+let a = false;
+let b = true;
+console.log(compareTrue(a, b));
+
 
 // Desafio 2
 function calcArea(base, height) {
