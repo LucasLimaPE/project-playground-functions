@@ -12,7 +12,7 @@ function compareTrue(valor1, valor2) {
 
 // Desafio 2
 // Algoritmo:
-// 1 - Declara-se uma função que irá receber dois valores (base) e (height), abre-se o bloco de código;
+// 1 - Declara-se uma função que irá receber como paraâmetro dois valores (base) e (height), abre-se o bloco de código;
 // 2 - Declara-se o retorno da função sendo o calculo da área do triângulo ((base*height) /2)), fecha-se o bloco de código.
 
 function calcArea(base, height) {
@@ -20,11 +20,13 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
+// Algoritmo:
+// 1 - Declara-se a função (splitSetence) que receberá como parâmetro uma string e abre-se o bloco de código;
+// 2 - Declara-se como retorno da função a string adicionada do método split, que irá separar está string onde houver a ocorrência do que foi passado como parâmetro no método, neste caso o espaço (' '), formando um array com o resultado do método. Fecha-se o bloco de código.
 /* Para resolver este desafio foi usado o método encontrado em:(https://blog.betrybe.com/javascript/javascript-split/) */
 function splitSentence(string) {
   return string.split(' ');
 }
-
 
 // Desafio 4
 function concatName(array) {
