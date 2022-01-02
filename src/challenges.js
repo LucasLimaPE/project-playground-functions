@@ -29,12 +29,31 @@ function splitSentence(string) {
 }
 
 // Desafio 4
+// Algoritmo:
+// 1 - Declara-se uma função (concatName) que receber=a como parâmetro um array, abre-se o bloco de código;
+// 2 - Declara-se uma variável (firstItem) que irá conter a primeira posição do array;
+// 3 - Declara-se uma variável (lastItem) que irá conter a última posição do array;
+// 4 - Declara-se a variável (itemsTogrther) que irá concatenar a última posição do array (lastItem) com a vírgula e o espaço (', ') e a primeira posição do array (firstItem);
+// 5 - Declara-se como retorno da função a variável (itemsTogether) um template string que irá que irá permitir a expressão imbutida para concatenação dos valores, os valores dentro do template string estão dentro de placeholders (${}) que é responsável por pegar o valor da variável dentro dele.
+/*
+Pesquisas feitas em:
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Template_literals
+https://www.tutorialsandyou.com/javascript/what-is-dollar-sign-and-curly-braces-in-javascript-3.html */
+
 function concatName(array) {
   let firstItem = array[0];
   let lastItem = array[array.length - 1];
-  let itemsTogether = lastItem + ', ' + firstItem;
+  let itemsTogether = `${lastItem}, ${firstItem}`;
   return itemsTogether;
 }
+
+// function concatName(array) {
+//   let firstItem = array[0];
+//   let lastItem = array[array.length - 1];
+//   let itemsTogether = lastItem + ', ' + firstItem;
+//   return itemsTogether;
+// }
 
 // Desafio 5
 function footballPoints(wins, ties) {
