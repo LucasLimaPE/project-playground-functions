@@ -10,21 +10,21 @@ function compareTrue(valor1, valor2) {
   return false;
 }
 
-let a = false;
-let b = true;
-console.log(compareTrue(a, b));
-
-
 // Desafio 2
+// Algoritmo:
+// 1 - Declara-se uma função que irá receber dois valores (base) e (height), abre-se o bloco de código;
+// 2 - Declara-se o retorno da função sendo o calculo da área do triângulo ((base*height) /2)), fecha-se o bloco de código.
+
 function calcArea(base, height) {
   return (base * height) / 2;
 }
 
 // Desafio 3
+/* Para resolver este desafio foi usado o método encontrado em:(https://blog.betrybe.com/javascript/javascript-split/) */
 function splitSentence(string) {
   return string.split(' ');
 }
-/* Para resolver este desafio foi usado a função encontrada em:(https://blog.betrybe.com/javascript/javascript-split/) */
+
 
 // Desafio 4
 function concatName(array) {
