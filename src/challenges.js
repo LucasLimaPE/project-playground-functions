@@ -24,6 +24,7 @@ function calcArea(base, height) {
 // 1 - Declara-se a função (splitSetence) que receberá como parâmetro uma string e abre-se o bloco de código;
 // 2 - Declara-se como retorno da função a string adicionada do método split, que irá separar está string onde houver a ocorrência do que foi passado como parâmetro no método, neste caso o espaço (' '), formando um array com o resultado do método. Fecha-se o bloco de código.
 /* Para resolver este desafio foi usado o método encontrado em:(https://blog.betrybe.com/javascript/javascript-split/) */
+
 function splitSentence(string) {
   return string.split(' ');
 }
@@ -83,19 +84,36 @@ function highestCount(matriz) {
 }
 
 // Desafio 7
+// Algoritmo:
+// 1 - Declara-se uma função (catAndMouse) que receberá como parâmetro as posições de (mouse), (cat1) e (cat2), e irá retornas qual dos fatos irá alcançar o rato primeiro, abre-se o primeiro bloco de código;
+// 2 - Declara-se uma variável (distanceFronCat1) que terá como valor a diferença entre o (cat1) e o (mouse);
+// 3 - Declara-se uma variável (distanceFromCat2) que terá como valor a diferença entre (cat2) e (mouse);
+// 4 - Declara-se uma estrutura condicional que irá comparar usando o método [(Math.abs()) que retorna o valor absoluto, ou seja, o valor do módulo do valor que for passado como parâmetro] se (distanceFronCat1) é maior que (distanceFromCat2), se sim, abrir-se-á um bloco de código que dará como retorno da função [('cat2'), declarando o que (cat2) está mais próximo de (mouse). Atenta-se que aqui é uma string e não o valor em sí de (cat2)].
+// 5 - Declara-se um segundo if que irá comparar se (distanceFromCat2) é maior que (distanceFromCat1), se sim, abrir-se-á um bloco que dará como retorno da função a string ('cat2'), declarando que (cat1) está mais próximo de (mouse);
+// 6 - Declara-se um terceiro if que irá comparar se (distanceFromCat1) é igual a (distanceFromCat2), se sim, abrir-se-á um bloco de código que dará como retorno da função a string ('os gatos trombam e o rato foge'), declarando que a distânc
+
+/* O método usado para resolver este desafio foi sugerido por um colega em uma thread no Slack e encontrada em:
+(https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs)
+
+Pesquisas feitas em:
+
+https://www.devmedia.com.br/matematica-em-javascript-o-objeto-math/27439
+
+https://4anoilha.blogs.sapo.pt/o-que-e-valor-absoluto-e-valor-relativo-6338
+*/
+
 function catAndMouse(mouse, cat1, cat2) {
   let distanceFromCat1 = cat1 - mouse;
   let distanceFromCat2 = cat2 - mouse;
-  
+
   if (Math.abs(distanceFromCat1) > Math.abs(distanceFromCat2)) {
-    return "cat2";
-  } else if (Math.abs(distanceFromCat2) > Math.abs(distanceFromCat1)) {
-    return "cat1";
-  } else if (Math.abs(distanceFromCat1) === Math.abs(distanceFromCat2)) {
-    return "os gatos trombam e o rato foge";
+    return 'cat2';
+  } if (Math.abs(distanceFromCat2) > Math.abs(distanceFromCat1)) {
+    return 'cat1';
+  } if (Math.abs(distanceFromCat1) === Math.abs(distanceFromCat2)) {
+    return 'os gatos trombam e o rato foge';
   }
 }
-/* A função usada para resolver este desafio foi sugerida por um colega e encontrada em: (https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs) */
 
 // Desafio 8
 function fizzBuzz(matrizNumbers) {
