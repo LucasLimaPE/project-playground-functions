@@ -116,9 +116,18 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
+// Algoritmo:
+// 1 - Declara-se uma função fizzBuzz que receberá como parâmetro um array de números (matrizNumbers) e abre-se o bloco de código;
+// 2 - Declara-se uma varíavel contendo um array vazio que irá conter os valores adicionados nas condicionais feitas no próximo passo;
+// 3 Declarase um for que irá percorres todas as posições do array dado como parâmetro e abre-se o segundo bloco de código;
+// 4 - Declara-se um if que irá verificar se a divisão por 3 do número percorrido é exata e se a divisão deste mesmo número  por 5 também é exata, se sim abrir-se-á um bloco de código que adicionar-a a string ('fizzBuzz') à variável (numbersMatriz);
+// 5 - Declara-se um else if que irá verificar se a divisão do número percorrido por 3 não é exata e se a divisão deste mesmo número por 5 também não é exata, se sim, abrir-se-á um bloco de código que adicionará a string ('bud!') à variável (numbersMatriz);
+// 6 - Declara-se um else if que irá verificar se a divisão do número percorrido por 3 é exata, se sim, irá abrir um bloco de código onde o a string ('fizz') será adicionada à variável (numbersMatriz);
+// 7 - Declara-se um else if que irá verificar se a divisão do número percorrido por 5 é exata, se sim, irá abrir um bloco de código que irá adicionar a string ('buzz') à variável (numbersMatriz);
+// 8 - Declara-se como retorno da função a variável (numbersMatriz).
+
 function fizzBuzz(matrizNumbers) {
   let numbersMatriz = [];
-
   for (i = 0; i <= matrizNumbers.length - 1; i += 1) {
     if (matrizNumbers[i] % 3 === 0 && matrizNumbers[i] % 5 === 0) {
       numbersMatriz.push('fizzBuzz');
@@ -132,7 +141,7 @@ function fizzBuzz(matrizNumbers) {
   }
   return numbersMatriz;
 }
-  
+
 // Desafio 9
 function encode(string) {
   let exchangedLetters = '';
