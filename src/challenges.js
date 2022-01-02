@@ -48,26 +48,32 @@ function concatName(array) {
   return itemsTogether;
 }
 
-// function concatName(array) {
-//   let firstItem = array[0];
-//   let lastItem = array[array.length - 1];
-//   let itemsTogether = lastItem + ', ' + firstItem;
-//   return itemsTogether;
-// }
-
 // Desafio 5
+// Algoritmo:
+// 1 - Declara-se a função footballPoints, que recebe como parâmetro wins e ties, abre-se o bloco de código;
+// 2 - Declara-se o retorno da fnção sendo o parâmetro wins multiplicado por 3 somado de ties.
+
 function footballPoints(wins, ties) {
   return (wins * 3) + ties;
 }
 
 // Desafio 6
+// Algoritmo:
+// 1 - Declara-se uma função (highestCout) que receberá como parâmetro uma matriz (array de números) e abre-se o primeiro o primeiro bloco código;
+// 2 - Declara-se uma variável (higherNumber), tendo seu valor inicial como a primeira posição da matriz (matriz[0]);
+// 3 - Declara-se uma variável (higestNumberRepetitions) tendo seu valor incial 0;
+// 4 - Declara-se o primeiro for que irá percorrer o array buscando o maior número dentro dele;
+// 5 - Declara-se o segundo for que irá contar as repetições do maior número achado no primeiro for.
+// 6 - Declara-se o retorno da função sendo o valor da variável (higestNumberRepetitions).
+
 function highestCount(matriz) {
   let higherNumber = matriz[0];
   let higestNumberRepetitions = 0;
-  for (let i = 0; i <= matriz.length - 1; i += 1) { if (matriz[i] > higherNumber) {
-    higherNumber = matriz[i];
+  for (let i = 0; i <= matriz.length - 1; i += 1) {
+    if (matriz[i] > higherNumber) {
+      higherNumber = matriz[i];
     }
-  } 
+  }
   for (let i = 0; i <= matriz.length - 1; i += 1) {
     if (higherNumber === matriz[i]) {
       higestNumberRepetitions += 1;
