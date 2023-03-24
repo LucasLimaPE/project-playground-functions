@@ -36,19 +36,43 @@ function catAndMouse(mouse, cat1, cat2) {
   return 'os gatos trombam e o rato foge';
 }
 
-function fizzBuzz(matrizNumbers) {
-  let numbersMatriz = [];
-  for (i = 0; i <= matrizNumbers.length - 1; i += 1) {
-    if (matrizNumbers[i] % 3 === 0 && matrizNumbers[i] % 5 === 0) {
-      numbersMatriz.push('fizzBuzz');
-    } else if (matrizNumbers[i] % 3 !== 0 && matrizNumbers[i] % 5 !== 0) {
-      numbersMatriz.push('bug!');
-    } else if (matrizNumbers[i] % 3 === 0) {
-      numbersMatriz.push('fizz');
-    } else if (matrizNumbers[i] % 5 === 0) {
-      numbersMatriz.push('buzz');
+const fizzBuzzUtilities = {
+  divisibleThreeAndFive(number) {
+    return number % 3 === 0 && number % 5 === 0;
+  },
+
+  notDivisibleThreeAndFive(number) {
+    return number % 3 !== 0 && number % 5 !== 0;
+  },
+
+  divisibleThree(number) {
+    return number % 3 === 0;
+  },
+
+  divisibleFive(number) {
+    return number % 5 === 0;
+  },
+
+  comparePush(number, array) {
+    if (this.divisibleThreeAndFive(number)) {
+      array.push('fizzBuzz');
+    } else if (this.notDivisibleThreeAndFive(number)) {
+      array.push('bug!');
+    } else if (this.divisibleThree(number)) {
+      array.push('fizz');
+    } else {
+      array.push('buzz');
     }
+  },
+};
+
+function fizzBuzz(matrizNumbers) {
+  const numbersMatriz = [];
+
+  for (let number of matrizNumbers) {
+    fizzBuzzUtilities.comparePush(number, numbersMatriz);
   }
+
   return numbersMatriz;
 }
 
