@@ -1,8 +1,9 @@
 function compareTrue(valor1, valor2) {
-  if (valor1 === true && valor2 === true) {
-    return true;
-  }
-  return false;
+  // if (valor1 === true && valor2 === true) {
+  //   return true;
+  // }
+  // return false;
+  return valor1 && valor2;
 }
 
 function calcArea(base, height) {
@@ -68,7 +69,6 @@ function fizzBuzz(matrizNumbers) {
   }
   return numbersMatriz;
 }
-
 
 function encode(string) {
   let exchangedLetters = '';
