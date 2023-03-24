@@ -1,8 +1,4 @@
 function compareTrue(valor1, valor2) {
-  // if (valor1 === true && valor2 === true) {
-  //   return true;
-  // }
-  // return false;
   return valor1 && valor2;
 }
 
@@ -15,10 +11,7 @@ function splitSentence(string) {
 }
 
 function concatName(array) {
-  let firstItem = array[0];
-  let lastItem = array[array.length - 1];
-  let itemsTogether = `${lastItem}, ${firstItem}`;
-  return itemsTogether;
+  return `${array[array.length - 1]}, ${array[0]}`;
 }
 
 function footballPoints(wins, ties) {
