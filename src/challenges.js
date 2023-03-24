@@ -80,17 +80,17 @@ function encode(string) {
   let exchangedLetters = '';
   for (let i = 0; i <= string.length - 1; i += 1) {
     if (string[i] === 'a') {
-      exchangedLetters = 1;
+      exchangedLetters += 1;
     } else if (string[i] === 'e') {
-      exchangedLetters = 2;
+      exchangedLetters += 2;
     } else if (string[i] === 'i') {
-      exchangedLetters = 3;
+      exchangedLetters += 3;
     } else if (string[i] === 'o') {
-      exchangedLetters = 4;
+      exchangedLetters += 4;
     } else if (string[i] === 'u') {
-      exchangedLetters = 5;
+      exchangedLetters += 5;
     } else {
-      exchangedLetters = string[i];
+      exchangedLetters += string[i];
     }
   }
   return exchangedLetters;
@@ -99,16 +99,18 @@ function encode(string) {
 function decode(string) {
   let exchangedNumbers = '';
   for (let i = 0; i <= string.length - 1; i += 1) {
-    if (string[i] === 'a') {
-      exchangedNumbers += 1;
-    } else if (string[i] === 'e') {
-      exchangedNumbers += 2;
-    } else if (string[i] === 'i') {
-      exchangedNumbers += 3;
-    } else if (string[i] === 'o') {
-      exchangedNumbers += 4;
-    } else if (string[i] === 'u') {
-      exchangedNumbers += 5;
+    if (string[i] === '1') {
+      exchangedNumbers += 'a';
+    } else if (string[i] === '2') {
+      exchangedNumbers += 'e';
+    } else if (string[i] === '3') {
+      exchangedNumbers += 'i';
+    } else if (string[i] === '4') {
+      exchangedNumbers += 'o';
+    } else if (string[i] === '5') {
+      exchangedNumbers += 'u';
+    } else {
+      exchangedNumbers += string[i];
     }
   }
   return exchangedNumbers;
