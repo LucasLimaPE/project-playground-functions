@@ -19,19 +19,9 @@ function footballPoints(wins, ties) {
 }
 
 function highestCount(matriz) {
-  let higherNumber = matriz[0];
-  let higestNumberRepetitions = 0;
-  for (let i = 0; i <= matriz.length - 1; i += 1) {
-    if (matriz[i] > higherNumber) {
-      higherNumber = matriz[i];
-    }
-  }
-  for (let i = 0; i <= matriz.length - 1; i += 1) {
-    if (higherNumber === matriz[i]) {
-      higestNumberRepetitions += 1;
-    }
-  }
-  return higestNumberRepetitions;
+  const sortedMatriz = matriz.sort((a, b) => b - a);
+  const filteredHighest = sortedMatriz.filter((item) => item === sortedMatriz[0]);
+  return filteredHighest.length;
 }
 
 function catAndMouse(mouse, cat1, cat2) {
