@@ -25,16 +25,15 @@ function highestCount(matriz) {
 }
 
 function catAndMouse(mouse, cat1, cat2) {
-  let distanceFromCat1 = cat1 - mouse;
-  let distanceFromCat2 = cat2 - mouse;
+  const distanceFromCat1 = Math.abs(cat1 - mouse);
+  const distanceFromCat2 = Math.abs(cat2 - mouse);
 
-  if (Math.abs(distanceFromCat1) > Math.abs(distanceFromCat2)) {
-    return 'cat2';
-  } if (Math.abs(distanceFromCat2) > Math.abs(distanceFromCat1)) {
+  if (distanceFromCat1 < distanceFromCat2) {
     return 'cat1';
-  } if (Math.abs(distanceFromCat1) === Math.abs(distanceFromCat2)) {
-    return 'os gatos trombam e o rato foge';
+  } if (distanceFromCat2 < distanceFromCat1) {
+    return 'cat2';
   }
+  return 'os gatos trombam e o rato foge';
 }
 
 function fizzBuzz(matrizNumbers) {
