@@ -74,9 +74,9 @@ Com a realização desse projeto, foi possível consolidar os conceitos fundamen
 * JavaScript
 
 ## :computer: Arquivos modificados/criados
-  Os arquivos estão dentro da pasta src:
-  /src/challenges.js
-  /src/challenges2.js
+Os arquivos estão dentro da pasta src:
+* /src/challenges.js
+* /src/challenges2.js
 
 ## :handshake: Colaboradores
 <table>
