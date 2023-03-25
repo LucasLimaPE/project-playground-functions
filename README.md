@@ -20,8 +20,8 @@ Com a realização desse projeto, foi possível consolidar os conceitos fundamen
   - Deve retornar `false` quando um dos parâmetros for falso.
   - Deve retornar `true` quando os dois parâmetros forem verdadeiros.
 
-2. Criar uma função `calcArea` que calcula a área de um triângulo, que irá receber os valores de base (chamado `base`), altura (chamado `height`) como parâmetros e retornar o cálculo da sua área. 
-  - O cálculo da área de um triângulo é calculado atráves da seguinte fórmula: (base * altura) / 2 .
+2. Criar uma função `calcArea` que calcula a área de um triângulo, que irá receber os valores de base (chamado `base`) e altura (chamado `height`) como parâmetros e retornar o cálculo da sua área. 
+  - O cálculo da área de um triângulo é feito atráves da seguinte fórmula: (base * altura) / 2 .
 
 3. Criar uma função `splitSetence` que divida a frase, a função deve receber uma string e retornar um array de strings separadas por cada espaço da string original.
   - Se a funçao recebe `"Lucas Lima"` deve retornar `['Lucas', 'Lima']`.
@@ -54,7 +54,7 @@ Com a realização desse projeto, foi possível consolidar os conceitos fundamen
 
 10. Criar a função de lista de tecnologias `techList` que deve receber dois parâmetros, um deve ser um array contendo nomes de tecnologias, o outro deve ser o parâmetro (`name`) que irá conter um nome.
   - Para cada tenologia no array, a função deve criar um objeto no formato `{ tech: "nomeDaTecnologia", name: nome }`;
-  - A função deverá retornar um array contendo os objetos formados e ordem crecente a partir do campo `tech` .
+  - A função deverá retornar um array contendo os objetos formados e em ordem crecente a partir do campo `tech` .
 
 ### Requisitos bônus
 
@@ -62,7 +62,7 @@ Com a realização desse projeto, foi possível consolidar os conceitos fundamen
   - Caso o parâmetro da função seja [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1], a função deve retornar `(12) 34567-8901` .
   - Caso algum dos números do array seja menor que 0, maior que 9 ou se repita 3 vezes ou mais, a função deve retornar `"não é possível gerar um número de telefone com esses valores"`.
 
-12. Criar uma função de Condição de existência de um triângulo (`triangleCheck`) que deverá receber as três linhas (`linaA`, `lineB` e `lineC`) e retonar se é possível formar um triângulo com os valores apresentados de cada linha.
+12. Criar uma função que verifique a condição de existência de um triângulo (`triangleCheck`) que deverá receber as três linhas (`linaA`, `lineB` e `lineC`) e retonar se é possível formar um triângulo com os valores apresentados de cada linha.
   - Para se formar um triângulo, é necessário que a medida de qualquer um dos lados seja menor que a soma das medidas dos outros dois e menor que o valor absoluto da diferença entre essas medidas.
   - O retorno da função deve ser um booleano.
 
