@@ -55,17 +55,27 @@ function generatePhoneNumber(array) {
   return generatePhoneNumberUtilities.makeNumber(array);
 }
 
-console.log(generatePhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2]));
-
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  const lines = [lineA, lineB, lineC];
+
+  const checkLines = lines.some((line) => {
+    const otherLines = lines.filter((item) => item !== line);
+    const otherLinesSum = otherLines[0] + otherLines[1];
+    const absoluteValue = Math.abs(otherLines[0] - otherLines[1]);
+    return line < otherLinesSum && line > absoluteValue;
+  });
+  return checkLines;
 }
 
 // Desafio 13
-function hydrate() {
-  // seu código aqui
+function hydrate(string) {
+  const arrayNumbers = string.match(/\d+(\.\d+)?/g).map(Number);
+  const soma = arrayNumbers.reduce((acc, currentValue) => acc + currentValue, 0);
+  return soma > 1 ? `${soma} copos de água` : `${soma} copo de água`;
 }
+
+console.log(hydrate('1 cachaça, cervejas e  copo de vinho'));
 
 module.exports = {
   generatePhoneNumber,

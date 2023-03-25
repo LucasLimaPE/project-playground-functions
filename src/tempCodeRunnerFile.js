@@ -1,1 +1,1 @@
-console.log('a' === 'A');
+const replacedNome = splitNome.replace('"', '')
