@@ -1,1 +1,0 @@
-const replacedNome = splitNome.replace('"', '')
