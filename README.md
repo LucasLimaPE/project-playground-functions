@@ -1,4 +1,4 @@
-<h1 align="center">Project Lessons Learned</h1>
+<h1 align="center">Project Playground Functions</h1>
 
 ## :memo: Descrição
 Este projeto foi criado com o objetivo de testar e aprimorar os conhecimentos iniciais em JavaScript durante os primeiros módulos da Trybe. Durante sua elaboração, foram praticadas habilidades essenciais, tais como:
