@@ -68,7 +68,7 @@ Com a realização desse projeto, foi possível consolidar os conceitos fundamen
 
 13. Crie uma função de boas vindas ao Bar da Trybe (`hydrate`), a função irá receber uma string com um pedido ("1 cerveja") ou ("1 cerveja 2 cachaças e 1 copo de vinho"), para cada bebida a função deve retornar a sugestão de ingestão da mesma quantidade em copos de água.
   - Se a função recebe como parâmetro (`"1 copo de cerveja"`) deve retornar (`"1 copo de água"`).
-  - Se a função recebe como parâmetro (`"1 cerveja, 2 cachaças e 1 copo de vinho"`) deve retornar (`"3 copos de água"`).
+  - Se a função recebe como parâmetro (`"1 cerveja, 2 cachaças e 1 copo de vinho"`) deve retornar (`"4 copos de água"`).
 
 ## :wrench: Tecnologias utilizadas
 * JavaScript
