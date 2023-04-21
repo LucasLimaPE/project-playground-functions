@@ -53,7 +53,7 @@ Com a realização desse projeto, foi possível consolidar os conceitos fundamen
   - u => 5
 
 10. Criar a função de lista de tecnologias `techList` que deve receber dois parâmetros, um deve ser um array contendo nomes de tecnologias, o outro deve ser o parâmetro (`name`) que irá conter um nome.
-  - Para cada tenologia no array, a função deve criar um objeto no formato `{ tech: "nomeDaTecnologia", name: nome }`;
+  - Para cada tecnologia no array, a função deve criar um objeto no formato `{ tech: "nomeDaTecnologia", name: nome }`;
   - A função deverá retornar um array contendo os objetos formados e em ordem crecente a partir do campo `tech` .
 
 ### Requisitos bônus
